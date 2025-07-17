@@ -1,0 +1,26 @@
+{
+  "name": "api-empresa-weesu",
+  "version": "1.0.0",
+  "description": "API para o projeto front-end de Cadastro de Empresas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev ./src/index.ts",
+    "build": "tsc"
+  },
+  "author": "icaropegsakurai@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.14",
+    "eslint": "^9.31.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
