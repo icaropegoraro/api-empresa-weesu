@@ -14,7 +14,7 @@ app.get('/', (_req, res) => {
 });
 
 // 🚀 Aqui está o SELECT * FROM users
-app.get('/users', async (_req, res) => {
+app.post('/users', async (_req, res) => {
   try {
     const result = await db.query('SELECT * FROM users')
     res.json(result.rows)
@@ -24,5 +24,5 @@ app.get('/users', async (_req, res) => {
   }
 })
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3333
 app.listen(PORT, () => console.log(`🚀 Servidor rodando na porta ${PORT}`))
